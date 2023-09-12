@@ -5,6 +5,7 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 
 // Component
 import MenuItem from "./MenuItem";
+import HeaderItem from "./HeaderItem";
 import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () => {
@@ -12,11 +13,26 @@ const Header = () => {
         <div className="shadow-md bg-white sticky top-0 dark:bg-gray-900">
             <div className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6">
                 <div className="flex">
-                    <MenuItem title="Home" address="/" Icon={AiFillHome} />
+                    <MenuItem
+                        title="Home"
+                        address="/"
+                        Icon={AiFillHome}
+                        className="hover:bg-blue-500"
+                    />
                     <MenuItem
                         title="About"
                         address="/about"
                         Icon={BsFillInfoCircleFill}
+                    />
+                    <HeaderItem
+                        title="Trending"
+                        address="/trending"
+                        param="fetchTrending"
+                    />
+                    <HeaderItem
+                        title="TopRated"
+                        address="/trending"
+                        param="fetchTopRated"
                     />
                 </div>
                 <div className="flex items-center space-x-5">
