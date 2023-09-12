@@ -1,0 +1,3 @@
+This is a Next.js project
+visit app: https://imdbn13.vercel.app/
+using next-themes and ...
