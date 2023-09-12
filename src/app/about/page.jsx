@@ -3,7 +3,6 @@ import useTitle from "@/hooks/useTitle";
 import React from "react";
 
 const page = () => {
-    useTitle("About");
     return (
         <div className="max-w-6xl mx-auto mt-6 space-y-4">
             <h1 className="text-2xl font-medium text-amber-600">
