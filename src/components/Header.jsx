@@ -7,6 +7,7 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 import MenuItem from "./MenuItem";
 import HeaderItem from "./HeaderItem";
 import DarkModeSwitch from "./DarkModeSwitch";
+import SearchBox from "./SearchBox";
 
 const Header = () => {
     return (
@@ -36,10 +37,11 @@ const Header = () => {
                     />
                 </div>
                 <div className="flex items-center space-x-5">
+                    <SearchBox />
                     <DarkModeSwitch />
                     <Link href="/">
                         <h2 className="text-2xl">
-                            <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
+                            <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1 text-white">
                                 IMDb
                             </span>
                             <span className="text-xl hidden sm:inline">
